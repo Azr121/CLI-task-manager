@@ -18,6 +18,18 @@ public class Task {
         this.createdDate = LocalDate.now();
     }
 
+    private Task(String id, String title, Priority priority, boolean completed, LocalDate createdDate) {
+        this.id = id;
+        this.title = title;
+        this.priority = priority;
+        this.completed = completed;
+        this.createdDate = createdDate;
+    }
+
+    public static Task fromData(String id, String title, Priority priority, boolean completed, LocalDate createdDate) {
+        return new Task(id, title, priority, completed, createdDate);
+    }
+
     public String getId() {
         return id;
     }
