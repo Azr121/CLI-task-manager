@@ -72,8 +72,6 @@ When a user adds a task:
 **Prerequisites:** Java 21+, Maven 3.x
 
 ```bash
-git clone https://github.com/Azr121/cCi-task-manager.git
-cd cCi-task-manager
 mvn compile
 mvn exec:java -Dexec.mainClass="com.azr121.taskmanager.Main"
 ```
@@ -83,13 +81,15 @@ mvn exec:java -Dexec.mainClass="com.azr121.taskmanager.Main"
 mvn test
 ```
 
----
+> Note: requires Maven installed and on PATH, 
+> or use the VS Code Maven extension to run lifecycle goals.
 
 ## Features
 
-- [ ] Add a task with title and priority
-- [ ] View all tasks
-- [ ] Mark a task complete
-- [ ] Delete a task
-- [ ] File persistence across sessions
-- [ ] Input validation
+- [x] Add a task with title and priority
+- [x] View all tasks
+- [x] Mark a task complete
+- [x] Delete a task
+- [x] File persistence across sessions
+- [x] Input validation
+- [x] User-friendly error messages
